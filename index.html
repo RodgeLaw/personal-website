@@ -7,11 +7,14 @@
         content="Welcome to Rodge Law's portfolio! Explore my projects, skills, and experiences in web development, design, and creative problem-solving. Discover how I can help bring your ideas to life!" />
       <title>Rodge Law</title>
       <link rel="stylesheet" href="./styles.css" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
       <!--https://rodgelaw.github.io/personal-website/-->
     </head>
     
     <body>
       <header>
+        <div></div>
         <nav>
           <ul>
             <li><a href="#about">About</a></li>
@@ -22,18 +25,29 @@
       </header>
       <main>
         <section id="about">
-          <h2>Hello I'm Rodge.</h2>
-          <h3>a web developer</h3>
+          <div class="welcome">
+            <h2 id="intro-myname">Hello I'm Rodge.</h2>
+            <h3 id="brief-intro">a web developer</h3>
+          </div>
         </section>
         <section id="projects">
-          <h2>Projects</h2>
+          <h2>Project - survey form</h2>
+          <iframe src="./demo_iframe.html" name="iframe_a" height="300px" width="80%" title="Iframe Example"></iframe>
+          <p>Click <a href="https://rodgelaw.github.io/webprojects/" target="iframe_a">here</a> to view the project.</p>
+          <p>Or click <a href="https://rodgelaw.github.io/webprojects/" target="_blank">here</a> to navigate in a new tab.</p>
         </section>
-        
-        <p>On Progress...</p>
       </main>
       <footer>
         <section id="contact">
-          <h2>Contact</h2>
+          <h2>Contact me</h2>
+          <div class="social-icons">
+            <a id="profile-link" href="https://www.freecodecamp.org/RodgeLaw" target="_blank">
+              <i class="fab fa-free-code-camp"></i>
+            </a>
+            <a id="linkedin-link" href="https://www.linkedin.com/in/yuen-kat-law-910211344" target="_blank">
+              <!-- fa-brands cannot be seen -->
+              <i class="fab fa-linkedin"></i>
+          </div>
           <address>
             <p><a href="mailto:rodgelyk@gmail.com">Send email</a></p>
           </address>
