@@ -1,0 +1,113 @@
+/* products-styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+  max-width: 1090px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 400px 0;
+}
+.wrapper .table{
+  /*background: #67bafe97;*/
+  background: var(--card-bgcolor);
+  width: calc(40% - 20px);
+  padding: 30px 30px;
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.table .name-section{
+  display: flex;
+  justify-content: center;
+}
+.table .name-area{
+  height: 140px;
+  width: 320px;
+  border-radius: 10%;
+  padding: 2px;
+}
+.name-area .inner-area{
+  height: 100%;
+  width: 100%;
+  border-radius: 10%;
+  border: 3px solid var(--text-color);
+  line-height: 1.6;
+  text-align: center;
+  color: var(--text-color);
+  position: relative;
+}
+
+.name-area .inner-area .name-text{
+  font-size: 16px;
+  font-weight: 500;
+  
+}
+.table .line{
+  width: 100%;
+  height: 2px;
+  margin: 35px 0;
+  position: relative;
+}
+.table .line::before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 25px;
+  font-weight: 500;
+  background: #ffffff;
+  padding: 0 15px;
+  transform: translate(-50%, -50%);
+}
+.table .features li{
+  margin-bottom: 15px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.features li .detail{
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.first-project ::selection,
+.first-project .name-area,
+.first-project .inner-area{
+  background: var(--box-color);
+}
+
+.second-project ::selection,
+.second-project .name-area,
+.second-project .inner-area{
+  background: var(--box-color);
+}
+
+
+.line{
+  background: var(--text-color);
+}
+
+
+@media (max-width: 1020px) {
+  .wrapper .table{
+    width: calc(50% - 20px);
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 698px) {
+  .wrapper .table{
+    width: 100%;
+  }
+}
+::selection{
+  color: #fff;
+}
