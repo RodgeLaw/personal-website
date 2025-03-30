@@ -1,12 +1,6 @@
 /* products-styles */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
 
 .wrapper{
   max-width: 1090px;
@@ -91,22 +85,22 @@
   background: var(--box-color);
 }
 
-
 .line{
   background: var(--text-color);
 }
-
 
 @media (max-width: 1020px) {
   .wrapper .table{
     width: calc(50% - 20px);
     margin-bottom: 40px;
-  }
+}
+  
 }
 @media (max-width: 698px) {
   .wrapper .table{
     width: 100%;
-  }
+}
+  
 }
 ::selection{
   color: #fff;
