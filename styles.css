@@ -1,5 +1,6 @@
 :root {
     --main-color: #003366;
+    --secondary-color: #005B99;
     --text-color: #D3D3D3;
     --footer-color: #005B99;
     --card-bgcolor: #006699;
@@ -14,10 +15,16 @@
     }
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
     background: var(--main-color);
     font-family: Helvetica;
-    margin: 0;
 }
 
 header {
@@ -30,6 +37,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 9999;
 }
 
 nav {
@@ -53,6 +61,7 @@ nav>ul>li {
     margin: 0 0.2rem;
     padding: 0.2rem;
     display: block;
+    font-size: 1.2rem;
 }
 
 nav>ul>li:hover {
@@ -82,7 +91,7 @@ main {
 }
 
 #intro-myname {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 #brief-intro {
