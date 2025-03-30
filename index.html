@@ -7,6 +7,7 @@
         content="Welcome to Rodge Law's portfolio! Explore my projects, skills, and experiences in web development, design, and creative problem-solving. Discover how I can help bring your ideas to life!" />
       <title>Rodge Law</title>
       <link rel="stylesheet" href="./styles.css" />
+      <link rel="stylesheet" href="./products-styles.css" />
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap" />
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
       <!--https://rodgelaw.github.io/personal-website/-->
@@ -27,19 +28,59 @@
         <section id="about">
           <div class="welcome">
             <h2 id="intro-myname">Hello I'm Rodge.</h2>
-            <h3 id="brief-intro">a web developer</h3>
+            <h3 id="brief-intro">I am a web developer and a software engineer.</h3>
           </div>
         </section>
         <section id="projects">
-          <h2>Project - survey form</h2>
-          <iframe src="./demo_iframe.html" name="iframe_a" height="300px" width="80%" title="Iframe Example"></iframe>
-          <p>Click <a href="https://rodgelaw.github.io/webprojects/" target="iframe_a">here</a> to view the project.</p>
-          <p>Or click <a href="https://rodgelaw.github.io/webprojects/" target="_blank">here</a> to navigate in a new tab.</p>
+          <div class="wrapper">
+            <!-- first project -->
+            <div class="table first-project">
+              <div class="name-section">
+                <div class="name-area">
+                  <div class="inner-area">
+                    <span class="name-text"><h2>Group Project - Online Book Store</h2></span>
+                  </div>
+                </div>
+              </div>
+              <div class="line"></div>
+              <ul class="features">
+                <li>
+                  <span class="detail">
+                    A web app developed using IntelliJ IDEA that allows users and admins to log in and perform CRUD (Create, Read, Update, Delete) operations on books and accounts.
+                  </span>
+                </li>
+                <li>
+                  <span class="detail">Duty:	Developed a language-switching setting</span>
+                </li>
+              </ul>
+            </div>
+            <!-- second project -->
+            <div class="table second-project">
+              <div class="name-section">
+                <div class="name-area">
+                  <div class="inner-area">
+                    <span class="name-text"><h2>FYP - Developing an AI Chatbot for Online Psychological Support</h2></span>
+                  </div>
+                </div>
+              </div>
+              <div class="line"></div>
+              <ul class="features">
+                <li>
+                  <span class="detail">
+                    A chatbot utilizing LLMs with the RAG technique to focus on the needs of potential clients.
+                  </span>
+                </li>
+                <li>
+                  <span class="detail">Duty: Collected data and prepared feedback tools</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
       </main>
       <footer>
         <section id="contact">
-          <h2>Contact me</h2>
+          <h2 class="footer-title">Contact me</h2>
           <div class="social-icons">
             <a id="profile-link" href="https://www.freecodecamp.org/RodgeLaw" target="_blank">
               <i class="fab fa-free-code-camp"></i>
@@ -47,6 +88,7 @@
             <a id="linkedin-link" href="https://www.linkedin.com/in/yuen-kat-law-910211344" target="_blank">
               <!-- fa-brands cannot be seen -->
               <i class="fab fa-linkedin"></i>
+            </a>
           </div>
           <address>
             <p><a href="mailto:rodgelyk@gmail.com">Send email</a></p>
