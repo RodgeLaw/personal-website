@@ -99,6 +99,23 @@ main {
     font-style: italic;
 }
 
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+  
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 footer {
     position: relative;
     left: 0;
@@ -118,7 +135,7 @@ footer ::selection {
     background: var(--box-color);
 }
 
-.footer-title {
+.personal-project-title, .footer-title {
     font-size: 2rem;
     color: var(--text-color);
 }
