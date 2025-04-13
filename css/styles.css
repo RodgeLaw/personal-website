@@ -120,7 +120,7 @@ figcaption {
     font-size: 1rem;
     color: var(--text-color);
     text-align: center;
-    margin-top: 10px;
+    margin: 10px 0 100px;
 }
 
 footer {
